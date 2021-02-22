@@ -1,5 +1,5 @@
 # shakaba
-Shakaba is a simple PHP imageboard engine based on Claire
+Shakaba is a simple PHP imageboard engine based on [Claire](https://github.com/ClaireIsAlive/Claire)
 
 # Imageboards list
 - [Uber-chan](http://uberchan.rf.gd)
