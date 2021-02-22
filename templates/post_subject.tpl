@@ -1,0 +1,1 @@
+    <span class="filetitle"><?post_subject?></span> 

@@ -1,0 +1,1 @@
+<img style="display: block; margin-left: auto; margin-right: auto; margin-top:0%;" src="<?img_path?>" alt="<?img_alt?>" height="70%">

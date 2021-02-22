@@ -1,0 +1,1 @@
+ [<a href="?do=manage&p=bans&bans=<?urlencode_post_ip?>" title="Ban poster"><?htmlspecialchars_post_ip?></a>]

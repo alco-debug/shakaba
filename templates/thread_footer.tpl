@@ -1,0 +1,1 @@
+<span class="omittedposts"><?posts_omitted?> post(s) omitted.</span>
