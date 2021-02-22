@@ -1,8 +1,9 @@
 <?php
+include 'board_info.php';
 // --Config Start-- 
 define('CLAIRE_TEXTMODE', false); //true disallow images.
 define('CLAIRE_BLOGMODE', false); //true allow creating thread only by admin & mod.
-define('TINYIB_PAGETITLE', '/b/ - Общее');
+define('TINYIB_PAGETITLE', $GLOBALS['board_name'].' - '.$GLOBALS['board_desc']);
 define('TINYIB_ADMINPASS',  "");
 define('TINYIB_MODPASS',    ""); // Leave blank to disable
 define('TINYIB_THREADSPERPAGE', 10);
@@ -40,6 +41,6 @@ define('MARKUP_ENABLED_TAGS', [
 ]);
 define('MIGRATED', false);
 define('NEW_DOMAIN', 'http://example.com');
-define('ROOT_URI', '/b/');
+define('ROOT_URI', $GLOBALS['board_name']);
 // --Config End--
 ?>

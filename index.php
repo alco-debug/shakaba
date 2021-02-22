@@ -14,7 +14,7 @@ importModule('templates');; setupTemplates(TEMPLATES_PATH);
 importModule('view_page');
 /// --Imports End--
 
-function redirect($url='?do=page&p=0') {
+function redirect($url='?do=home') {
         header('Location: '.$url);
         die();
 }
@@ -42,6 +42,6 @@ switch($_GET['do']) {
             uberDie(fancyDie(viewBoards()));
         }break;
         default: {
-            uberDie(fancyDie(viewBoards()));
+            uberDie(homePage());
         } break;
 }
