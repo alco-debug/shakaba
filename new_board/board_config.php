@@ -14,7 +14,7 @@ define('TINYIB_MAXPOSTSIZE',    15000); // Characters
 define('TINYIB_RATELIMIT',      15);   // Delay between posts from same IP
 define('TINYIB_TRIPSEED',   "1231");
 define('TINYIB_USECAPTCHA',   true); // just use it.
-define('TINYIB_CAPTCHASALT',  '');
+define('TINYIB_CAPTCHASALT',  'sldkfhsdvjn398tp3ougho38w7ghi3yvb83uh09u');
 define('TINYIB_THUMBWIDTH',  250);
 define('TINYIB_THUMBHEIGHT', 250);
 define('TINYIB_REPLYWIDTH',  250);
@@ -24,7 +24,7 @@ define('TINYIB_DATEFORMAT', 'D Y-m-d g:ia');
 define('TINYIB_DBPOSTS','posts');
 define('TINYIB_DBBANS', 'bans');
 define('TINYIB_DBLOCKS','locked_threads');
-define('TINYIB_DBPATH', '../../db');
+define('TINYIB_DBPATH', '.db');
 define('MAINTENANCE_MODE', false);
 define('TEMPLATES_PATH', '../templates/');
 define('MODULES_PATH', '../modules/');
@@ -40,7 +40,8 @@ define('MARKUP_ENABLED_TAGS', [
     'header' => true,
 ]);
 define('MIGRATED', false);
-define('NEW_DOMAIN', 'http://example.com');
+define('NEW_DOMAIN', 'http://new-example.com');
+define('CURRENT_DOMAIN', 'http://example.com');
 define('ROOT_URI', $GLOBALS['board_name']);
 // --Config End--
 ?>

@@ -6,6 +6,7 @@ require 'board_config.php';
 require MODULES_PATH.'modules.php'; setupModules(['modules_path' => MODULES_PATH]);
 
 /// --Imports Start--
+importModule('boards');
 importModule('build_post'); setupBuildPost([
                                         'markup_enabled' => MARKUP_ENABLED,
                                         'markup_enabled_tags' => MARKUP_ENABLED_TAGS,

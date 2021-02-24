@@ -39,7 +39,7 @@ define('MARKUP_ENABLED_TAGS', [
     'header' => true,
 ]);
 define('MIGRATED', false);
-define('NEW_DOMAIN', 'http://example.com');
+define('NEW_DOMAIN', 'http://new-example.com');
 define('ROOT_URI', '');
 
 $board_name = ROOT_URI;

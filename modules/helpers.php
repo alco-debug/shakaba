@@ -16,7 +16,8 @@ function processAllLinks($string){
     $ret = str_replace('href="?', 'href="'.ROOT_URI.'?', $ret);
     $ret = str_replace('href="?', 'href="'.ROOT_URI.'?', $ret);
     $ret = str_replace('action="', 'action="'.ROOT_URI, $ret);
-    $ret = str_replace('href=<?root?>', 'href="/"', $ret);
+    $ret = str_replace('href="<?root?>/', 'href="/', $ret);
+
     return $ret;
 }
 

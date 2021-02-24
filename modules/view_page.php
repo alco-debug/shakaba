@@ -48,6 +48,15 @@ function getReturnLink($parent, $locked){
     return $returnlink;
 }
 
+function renderMenu(){
+        $boards = getBoardsTable();
+        $menulinks = '';
+        foreach($boards as $board => $desc){
+                $menulinks .= '<a href="<?root?>'.$board.'">['.$desc.']</a><br><br>';
+        }
+        return renderTemplate('menu', ['menulinks' => $menulinks]);
+}
+
 function buildPage($htmlposts, $parent, $pages=0, $thispage=0) {
     $locked = $parent ? isLocked($parent) : false;
     $returnlink = ''; $pagelinks = '';
@@ -74,6 +83,8 @@ function buildPage($htmlposts, $parent, $pages=0, $thispage=0) {
             'header' => pageHeader(),
             'page_title' => TINYIB_PAGETITLE,
             'maintenance_message' => $maintenance_message,
+            'navbuttons' => renderTemplate('navbuttons', []),
+            'menu' => renderMenu(),
             'postblock' => $postblock,
             'pagelinks' => $pagelinks,
             'thread_is_locked' => $thread_is_locked,
