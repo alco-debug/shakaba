@@ -17,7 +17,7 @@
 .menubutton:hover .menu{display: block;}
 .moderator{color:#fff; background:#9b67e0}
 .monotype{font-family: "Liberation Mono", "Ubuntu Mono", "Courier New", Courier, "Lucida Console", mono}
-.navbutton{display: block; position: fixed; left:95%; width:5%; background:rgba(0,0,0,0.5); text-align: center;}
+.navbutton{display: block; position: fixed; left:93%; width:7%; background:rgba(0,0,0,0.5); text-align: center;}
 #navbutton_top{top: 15%;}
 #navbutton_bottom{top: 85%;}
 .nothumb{background:#eee;border:2px dashed #aaa;float:left;margin:2px 20px;padding:1em .5em;text-align:center}

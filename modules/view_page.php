@@ -114,8 +114,8 @@ function viewPage($pagenum) {
 function viewThread($id) {
     $htmlposts = array();
     $posts = postsInThreadByID($id);
-    foreach ($posts as $post) $htmlposts[] = buildPost($post, True);
-    $htmlposts[] = "<br clear=\"left\">\n<hr>";
+    foreach ($posts as $num => $post) $htmlposts[] = buildPost($post, True, $num > 0?$num:"");
+    //$htmlposts[] .= "<br clear=\"left\">\n<hr>";
     return buildPage(implode('',$htmlposts), $id);
 }
 

@@ -46,8 +46,8 @@ function processUnderline($post){
 
 function processItalic($post){
     if(MARKUP_ENABLED_TAGS['italic'])
-        $post = preg_replace("#\*(.*?)\*#","<span class=\"italic\">\\1</i>",$post);
-        $post = preg_replace("#\[i\](.*?)\[/i\]#","<span class=\"italic\">\\1</i>",$post);
+        $post = preg_replace("#\*(.*?)\*#","<span class=\"italic\">\\1</span>",$post);
+        $post = preg_replace("#\[i\](.*?)\[/i\]#","<span class=\"italic\">\\1</span>",$post);
     return $post;
 }
 
@@ -60,8 +60,8 @@ function processStrike($post){
 
 function processBold($post){
     if(MARKUP_ENABLED_TAGS['bold'])
-        $post = preg_replace("#\*\*(.*?)\*\*#",'<span class=\"bold\">\\1</span>',$post);
-        $post = preg_replace("#\[b\](.*?)\[/b\]#",'<span class=\"bold\">\\1</span>',$post);
+        $post = preg_replace("#\*\*(.*?)\*\*#",'<span class="bold">\\1</span>',$post);
+        $post = preg_replace("#\[b\](.*?)\[/b\]#",'<span class="bold">\\1</span>',$post);
     return $post;
 }
 

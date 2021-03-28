@@ -2,8 +2,8 @@
 // --Config Start-- 
 define('CLAIRE_TEXTMODE', false); //true disallow images.
 define('CLAIRE_BLOGMODE', false); //true allow creating thread only by admin & mod.
-define('TINYIB_PAGETITLE', '');
-define('TINYIB_ADMINPASS',  "Shakaba");
+define('TINYIB_PAGETITLE', 'Shakaba');
+define('TINYIB_ADMINPASS',  "");
 define('TINYIB_MODPASS',    ""); // Leave blank to disable
 define('TINYIB_THREADSPERPAGE', 10);
 define('TINYIB_REPLIESTOSHOW',  3);

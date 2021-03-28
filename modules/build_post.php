@@ -6,7 +6,7 @@ function setupBuildPost($settings){
     setupMarkup(['markup_enabled_tags' => $settings['markup_enabled_tags']]);
 }
 
-function buildPost($post, $isrespage) {
+function buildPost($post, $isrespage, $number_in_thread="") {
     if(MARKUP_ENABLED)
         $post = processMarkup($post);
     $threadid = getThreadID($post);
@@ -30,6 +30,7 @@ function buildPost($post, $isrespage) {
         'post_message' => $post_message,
         'ban_poster' => $ban_poster,
         'post_link' => $post_link,
+        'post_number_in_thread' => $number_in_thread,
         ];
     
     
